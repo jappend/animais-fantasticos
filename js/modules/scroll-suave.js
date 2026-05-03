@@ -1,28 +1,35 @@
-export default function initSmoothScroll() {
-  const linksInternos = document.querySelectorAll(
-    '[data-js="menu"] a[href^="#"]',
-  );
+export default class SmoothScroll {
+  constructor(links, options) {
+    this.linksInternos = document.querySelectorAll(links);
+    if (options === undefined) {
+      this.options = { behavior: "smooth", block: "start" };
+    } else {
+      this.options = options;
+    }
 
-  function scrollToSection(event) {
+    this.scrollToSection = this.scrollToSection.bind(this);
+  }
+
+  scrollToSection(event) {
     event.preventDefault();
 
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
 
-    /*   window.scrollTo({
-      top: section.offsetTop,
-      behavior: 'smooth'
-    }); */
+    section.scrollIntoView(this.options);
+  }
 
-    // opção alternativa
-
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+  addLinkEvent() {
+    this.linksInternos.forEach((link) => {
+      link.addEventListener("click", this.scrollToSection);
     });
   }
 
-  linksInternos.forEach((link) => {
-    link.addEventListener("click", scrollToSection);
-  });
+  init() {
+    if (this.linksInternos.length) {
+      this.addLinkEvent();
+    }
+
+    return this;
+  }
 }
