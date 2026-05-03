@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Animais Fantásticos</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="main.js" defer></script>
+  <script>document.documentElement.className += ' js'; // adicionar suporte a javascript desligado e browsers antigos, dai o className</script>
+</head>
+
+<body>
+  <div class="grid-container">
+    <nav class="menu" data-js="menu">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
+        <li><a href="#animais">Animais</a></li>
+        <li data-dropdown>
+          <a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">A Empresa</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="socios.html">Sócios</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a data-modal="abrir" href="https://github.com/jappend">Login →</a></li>
+      </ul>
+    </nav>
+
+    <section class="grid-section animais" data-js="scroll" id="animais">
+      <h1 class="titulo">Animais Fantásticos</h1>
+      <ul class="animais-lista" data-js="tabmenu">
+        <li><img src="./img/imagem-girafa.jpg"></li>
+        <li><img src="./img/imagem-elefante.jpg"></li>
+        <li><img src="./img/imagem-chita.jpg"></li>
+        <li><img src="./img/imagem-hipopotamo.jpg"></li>
+        <li><img src="./img/imagem-leao.jpg"></li>
+        <li><img src="./img/imagem-urso.jpg"></li>
+      </ul>
+
+      <div class="animais-descricao" data-js="tabcontent">
+        <section data-anime="show-right" class="show-right">
+          <h2>Girafa</h2>
+          <p>As girafas são animais impressionantes que vivem maioritariamente nas savanas africanas. Conhecidas pelo seu
+            longo pescoço, são os mamíferos mais altos do mundo, conseguindo alcançar folhas no topo das árvores com
+            facilidade.</p>
+          <p>Além da altura, possuem uma língua longa e resistente que lhes permite alimentar-se mesmo de plantas com
+            espinhos. O padrão de manchas no seu corpo é único em cada indivíduo, funcionando como uma espécie de
+            identificação natural.</p>
+          <p>Apesar do seu aspeto calmo, as girafas conseguem defender-se com pontapés muito fortes. Atualmente, enfrentam
+            ameaças como a perda de habitat, tornando a sua preservação essencial para o equilíbrio da natureza.</p>
+        </section>
+
+        <section data-anime="show-right">
+          <h2>Elefante</h2>
+          <p>Os elefantes são os maiores mamíferos terrestres e vivem principalmente em África e na Ásia. São conhecidos
+            pelo seu tamanho impressionante, pelas suas grandes orelhas e pela tromba, que utilizam para respirar, beber
+            água e agarrar objetos.</p>
+          <p>Estes animais são extremamente inteligentes e possuem uma forte ligação social, vivendo em grupos liderados
+            geralmente por uma fêmea mais velha. Comunicam entre si através de sons de baixa frequência e gestos,
+            demonstrando comportamentos complexos.</p>
+          <p>Apesar da sua força, os elefantes enfrentam várias ameaças, como a caça ilegal e a destruição do habitat. A
+            sua conservação é fundamental para manter o equilíbrio dos ecossistemas onde vivem.</p>
+        </section>
+
+        <section data-anime="show-down">
+          <h2>Chita</h2>
+          <p>A chita é um dos animais mais rápidos do mundo, sendo capaz de atingir velocidades impressionantes em curtas
+            distâncias. Vive principalmente nas savanas africanas, onde utiliza a sua agilidade para caçar presas.</p>
+          <p>Possui um corpo esguio, pernas longas e manchas pretas características que ajudam na camuflagem. A sua cauda
+            longa também é essencial para manter o equilíbrio durante corridas a alta velocidade.</p>
+          <p>Apesar das suas habilidades extraordinárias, a chita enfrenta ameaças como a perda de habitat e a diminuição
+            de presas, tornando a sua proteção importante para a biodiversidade.</p>
+        </section>
+
+        <section data-anime="show-right">
+          <h2>Hipópotamo</h2>
+          <p>O hipopótamo é um dos maiores mamíferos terrestres e vive em rios e lagos de África. Apesar do seu aspeto
+            pesado, passa grande parte do tempo dentro de água, onde se mantém fresco e protegido do sol.</p>
+          <p>Possui um corpo robusto, pele espessa e uma boca enorme com dentes fortes, que utiliza tanto para defesa como
+            para disputar território. Durante a noite, sai da água para se alimentar de erva nas margens.</p>
+          <p>Embora pareça calmo, o hipopótamo pode ser bastante agressivo e territorial. A perda de habitat e a atividade
+            humana representam ameaças para a espécie, tornando a sua conservação essencial.</p>
+        </section>
+
+        <section data-anime="show-right">
+          <h2>Leão</h2>
+          <p>O leão é um dos animais mais emblemáticos da savana africana, conhecido como o "rei da selva". Vive em grupos
+            chamados alcateias, onde existe uma organização social bem definida entre machos, fêmeas e crias.</p>
+          <p>Os leões machos distinguem-se pela sua juba imponente, que varia de cor e tamanho. Já as fêmeas são as
+            principais responsáveis pela caça, trabalhando em equipa para capturar presas.</p>
+          <p>Apesar da sua força e posição no topo da cadeia alimentar, os leões enfrentam ameaças como a perda de habitat
+            e conflitos com humanos, sendo importante proteger a espécie.</p>
+        </section>
+
+        <section data-anime="show-right">
+          <h2>Urso</h2>
+          <p>O urso é um mamífero de grande porte que pode ser encontrado em várias regiões do mundo, desde florestas até
+            áreas montanhosas e regiões frias. Existem diferentes espécies, cada uma adaptada ao seu ambiente específico.
+          </p>
+          <p>Possui um corpo forte, garras afiadas e um olfato muito desenvolvido, que o ajuda a encontrar alimento. A sua
+            dieta varia conforme a espécie, podendo incluir frutos, peixes, insetos e até outros animais.</p>
+          <p>Alguns ursos entram em hibernação durante o inverno, reduzindo a atividade para conservar energia. A
+            destruição do habitat e as mudanças climáticas são desafios importantes para a sobrevivência destes animais.
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <section class="grid-section faq" data-js="scroll" id="faq">
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista" data-js="accordion">
+        <dt>O que são animais?</dt>
+        <dd>Os animais são seres vivos que se alimentam de outros organismos, podem mover-se e reagem ao ambiente à sua
+          volta.</dd>
+
+        <dt>Quantos tipos de animais existem?</dt>
+        <dd>Existem milhões de espécies de animais, organizadas em grupos como mamíferos, aves, peixes, répteis e
+          anfíbios.</dd>
+
+        <dt>Onde vivem os animais?</dt>
+        <dd>Os animais vivem em diferentes habitats, como florestas, oceanos, desertos e até em cidades.</dd>
+
+        <dt>Porque é importante proteger os animais?</dt>
+        <dd>Proteger os animais ajuda a manter o equilíbrio dos ecossistemas e a biodiversidade do planeta.</dd>
+      </dl>
+    </section>
+
+    <section class="grid-section numeros" data-js="scroll">
+      <h1 class="titulo">Números</h1>
+      <div class="numeros-grid"></div>
+    </section>
+
+    <section class="grid-section contacto" data-js="scroll" id="contacto">
+      <h1 class="titulo">Contacto</h1>
+      <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
+        <img src="./img/mapa.png">
+      </div>
+      <ul class="dados">
+        <li>jappendgit@gmail.com</li>
+        <li>+351 999 999 999</li>
+        <li>R. Murtas</li>
+        <li>1700-111 Lisboa</li>
+        <li>Doe <span class="btc-preco">0</span> bitcoins para nos ajudar!</li>
+        <li data-semana="1,2,3,4,5" data-horario="9,18"">Seg à Sex das 9:00 às 18:00</li>
+      </ul>
+    </section>
+
+    <footer class="copy">
+      <p>Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
