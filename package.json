@@ -1,5 +1,5 @@
 {
-  "name": "eslint",
+  "name": "animais-fantasticos",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "dev": "webpack --mode development --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "jappend",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.29.0",
