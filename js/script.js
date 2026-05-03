@@ -1,5 +1,5 @@
 import SmoothScroll from "./modules/scroll-suave.js";
-import initScrollAnimation from "./modules/scroll-animation.js";
+import ScrollAnima from "./modules/scroll-anima.js";
 import TabNav from "./modules/tab-nav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
@@ -37,4 +37,6 @@ initMenuMobile();
 initFuncionamento();
 fetchAnimais("../../animais-mock-api.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
-initScrollAnimation();
+
+const scrollAnima = new ScrollAnima('[data-js="scroll"]');
+scrollAnima.init();
