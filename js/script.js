@@ -3,12 +3,12 @@ import ScrollAnima from "./modules/scroll-anima.js";
 import TabNav from "./modules/tab-nav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
-import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import Accordion from "./modules/accordion.js";
 import DropdownMenu from "./modules/dropdown.js";
+import MenuMobile from "./modules/menu-mobile.js";
 
 const smoothScroll = new SmoothScroll('[data-js="menu"] a[href^="#"]');
 smoothScroll.init();
@@ -32,10 +32,16 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-const dropdown = new DropdownMenu("[data-dropdown]");
+const dropdown = new DropdownMenu("[data-dropdown]", ["touchstart", "click"]);
 dropdown.init();
 
-initMenuMobile();
+const menuMobile = new MenuMobile(
+  '[data-menu="button"]',
+  '[data-menu="list"]',
+  ["touchstart", "click"],
+);
+menuMobile.init();
+
 initFuncionamento();
 fetchAnimais("../../animais-mock-api.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
