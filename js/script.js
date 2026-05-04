@@ -3,12 +3,12 @@ import ScrollAnima from "./modules/scroll-anima.js";
 import TabNav from "./modules/tab-nav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
-import initDropdownMenu from "./modules/dropdown.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import Accordion from "./modules/accordion.js";
+import DropdownMenu from "./modules/dropdown.js";
 
 const smoothScroll = new SmoothScroll('[data-js="menu"] a[href^="#"]');
 smoothScroll.init();
@@ -32,7 +32,9 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-initDropdownMenu();
+const dropdown = new DropdownMenu("[data-dropdown]");
+dropdown.init();
+
 initMenuMobile();
 initFuncionamento();
 fetchAnimais("../../animais-mock-api.json", ".numeros-grid");
