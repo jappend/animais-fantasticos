@@ -45,7 +45,7 @@ menuMobile.init();
 const funcionamento = new Funcionamento("[data-semana]", "aberto");
 funcionamento.init();
 
-fetchAnimais("../../animais-mock-api.json", ".numeros-grid");
+fetchAnimais("./animais-mock-api.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
 const scrollAnima = new ScrollAnima('[data-js="scroll"]');
