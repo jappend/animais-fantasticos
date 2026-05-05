@@ -1,4 +1,4 @@
-[project showcase](https://imgur.com/YO6BwGs)
+![project showcase](https://imgur.com/YO6BwGs)
 
 ## Github Pages:
 
