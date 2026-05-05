@@ -1,4 +1,4 @@
-[[image https://i.imgur.com/YO6BwGs.png]]
+[project showcase](https://imgur.com/YO6BwGs)
 
 ## Github Pages:
 
